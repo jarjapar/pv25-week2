@@ -80,6 +80,8 @@ class UserRegistrationForm(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+    with open("style.qss", "r") as f:
+        app.setStyleSheet(f.read())
     window = UserRegistrationForm()
     window.show()
     sys.exit(app.exec_())

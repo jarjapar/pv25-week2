@@ -1,0 +1,67 @@
+QWidget, QLabel, QRadioButton {
+    background-color: #1E1E2F;
+    font: 14px "Arial", sans-serif;
+    color: #EAEAEA;
+}
+
+QGroupBox {
+    background: #2A2A3B;
+    border: 2px solid #3A3A4B;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    font: bold 16px;
+    color: #FFF;
+}
+
+QLineEdit, QComboBox {
+    border: 2px solid #5A5A6B;
+    border-radius: 5px;
+    padding: 8px;
+    background: #2E2E3E;
+    color: #FFF;
+}
+
+QLineEdit:focus, QComboBox:hover {
+    border-color: #0078D7;
+    background: #34344A;
+}
+
+QComboBox::drop-down { border: none; }
+
+QComboBox QAbstractItemView {
+    background: #2E2E3E;
+    border: 1px solid #5A5A6B;
+    color: #FFF;
+}
+
+QRadioButton::indicator {
+    width: 16px; height: 16px;
+    border-radius: 8px;
+    border: 2px solid #5A5A6B;
+    background: #2E2E3E;
+}
+
+QRadioButton::indicator:checked {
+    background: #0078D7;
+    border-color: #0078D7;
+}
+
+QPushButton {
+    background: #0078D7;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font: bold 14px;
+    border: none;
+}
+
+QPushButton:hover { background: #0056b3; }
+QPushButton:pressed { background: #00408D; }
+
+QGroupBox#Navigation QPushButton {
+    background: #3A3A4B;
+}
+
+QGroupBox#Navigation QPushButton:hover { background: #4A4A5C; }
+QGroupBox#Navigation QPushButton:pressed { background: #2A2A3B; }
